@@ -1,0 +1,17 @@
+{% include 'cabecalho.html' %}
+
+<h1>{{valor}}</h1>
+
+<form class="mb-3" action="/registro" method="POST">
+    <label><h4>Nome</h4></label> <br>
+    <input type="text" name="nome" placeholder="nome"> <br>
+    <label><h4>Data de Nascimento</h4></label> <br>
+    <input type="date" name="dataNasc"><br>
+    <label><h4>CPF</h4></label> <br>
+    <input type="text" name="cpf" placeholder="000.000.000-00"><br>
+    <label><h4>Nome da Mãe</h4></label> <br>
+    <input type="text" name="nome_mae" placeholder="nome da mãe"><br>
+    <button type="submit">Enviar</button> <br>
+</form>
+
+{% include 'rodape.html' %}
